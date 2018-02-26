@@ -1,17 +1,7 @@
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::
-
- 
+marketplace-api
+#####################
+##we have the following objectives:
 SpringBoot and Hibernate/JPA with an embedded Jetty Container.
-
-we have the following objectives:
-
 Database Support via H2
 JPA implementation using Hibernate 5
 Standardized logging
@@ -24,21 +14,28 @@ Testing can be accomplished via SpringBootTest using the `test` Spring profile
 
 
 
-Non-Functional Requirements
+##Non-Functional Requirements
 TODO:
 1) Code Coverage using SonarQube -Configure using Maven
 2) Application Monitoring
 3) Swagger Config
 
-Application Build & Deployment
+##Application Build & Deployment
 
 Be sure to have the following installed on your build machine:
 
 Java JDK 1.8
 Maven 3
 
-Run : mvn clean install
-Java -jar  jarful
+```
+mvn clean install
+
+```
+
+```
+
+java -jar ../marketplace-api-0.0.1-SNAPSHOT.jar
+```
 
 1) access below API to get OAuth Token
 

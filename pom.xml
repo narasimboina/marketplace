@@ -9,8 +9,8 @@
 		<version>1.5.1.RELEASE</version>
 	</parent>
 
-	<groupId>marketplace</groupId>
-	<artifactId>marketplace</artifactId>
+	<groupId>com.marketplace.api</groupId>
+	<artifactId>marketplace-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
