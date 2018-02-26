@@ -73,8 +73,12 @@ $ curl -X GET http://127.0.0.1:8080/projects/2 -H "Authorization: Bearer 632abb7
 
 
 The time the exercise took - 10 - 14 hours
+
 Exercise Difficulty:  Moderate
+
 How did you feel about the exercise itself - I feel this exercise will give candidate in depth knowledge and approach for coding
+
 How do you feel about coding an exercise as a step in the interview process  - 10 Awesome
+
 What would you change in the exercise and/or process - provide some non functional requirements for basic like code coverage 
  
