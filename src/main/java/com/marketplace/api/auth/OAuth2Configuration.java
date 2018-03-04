@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.*;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
+import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -18,7 +19,6 @@ import org.springframework.security.core.AuthenticationException;
  */
 // tag::OAuth2Configuration[]
 @Configuration
-@EnableResourceServer
 @EnableAuthorizationServer
 public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
 
@@ -50,6 +50,11 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
 				return authenticationManager.getOrBuild().authenticate(authentication);
 			}
 		});
+	}
+	@Override
+	public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
+	    super.configure(oauthServer);
+		
 	}
 
 
